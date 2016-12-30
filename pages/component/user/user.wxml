@@ -1,1 +1,44 @@
-我是个人中心
+<view class="container page">
+  <view class="topview">
+    <image class="image_avatar" src="/image/user_head_default_man_bg.png"></image>
+    <view class="user_info">
+      <block wx:for="{{userInfoList}}">
+        <view class="top_item">
+          <image class="top_item_image" src="{{item.image}}"></image>
+          <text class="top_item_font">{{item.name}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+  <scroll-view scroll-y="true"  id= "scroll_view" style="height:{{scrollview_height}};" >
+    <text class="item_title_font">我的房源</text>
+    <view class="user_itemlist_view">
+      <block wx:for="{{houseList}}">
+        <view style=" height: 40px;">
+          <view class="user_item_view">
+            <image style="width:22px;height:22px; margin: 8px;" src="{{item.image}}"></image>
+            <text>{{item.name}}</text>
+          </view>
+          <view style="margin-left:38px;display:{{item.showLine?'block':'none'}}" class="horizontal_line_grey"></view>
+        </view>
+      </block>
+    </view>
+    <text class="item_title_font">我的客源</text>
+    <view class="user_itemlist_view">
+      <block wx:for="{{customerList}}">
+        <view style=" height: 40px;">
+          <view class="user_item_view">
+            <image style="width:22px;height:22px; margin: 8px;" src="{{item.image}}"></image>
+            <text>{{item.name}}</text>
+          </view>
+          <view style="margin-left:38px;display:{{item.showLine?'block':'none'}}" class="horizontal_line_grey"></view>
+        </view>
+      </block>
+    </view>
+    <view style="height:20px;background-color: #f0f1f1"></view>
+    <view class="user_item_view">
+      <image style="width:22px;height:22px; margin: 8px;" src="/image/set_up.png"></image>
+      <text>设置</text>
+    </view>
+  </scroll-view>
+</view>

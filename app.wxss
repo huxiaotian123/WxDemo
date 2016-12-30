@@ -1,11 +1,20 @@
 /**app.wxss**/
 .container {
-  height: 80%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-  background: #ff0
-} 
+  min-height: 100%;
+
+}
+
+
+.page {
+  background-color: #fbf9fe;
+  height: 100%;
+}
+
+.horizontal_line_grey{
+  width: 100%;
+  min-width: 100%;
+  background-color: #cccccc;
+  height: 1px;
+}

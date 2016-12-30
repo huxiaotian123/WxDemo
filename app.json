@@ -1,18 +1,20 @@
 {
   "pages":[
+    "pages/component/user/user",
     "pages/component/home/home",
     "pages/component/house/house",
     "pages/component/customer/customer",
     "pages/component/transaction/transaction",
-    "pages/component/user/user",
     "pages/index/index",
     "pages/logs/logs"
   ],
   "window":{
-    "backgroundTextStyle":"light",
+    "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Fangyou经纪人",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#ffffff"
+
+
   },
    "tabBar": {
         "color": "#333333",
