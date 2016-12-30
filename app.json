@@ -1,0 +1,58 @@
+{
+  "pages":[
+    "pages/component/home/home",
+    "pages/component/house/house",
+    "pages/component/customer/customer",
+    "pages/component/transaction/transaction",
+    "pages/component/user/user",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Fangyou经纪人",
+    "navigationBarTextStyle":"black"
+  },
+   "tabBar": {
+        "color": "#333333",
+        "selectedColor": "#e12323",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [{
+            "pagePath": "pages/component/house/house",
+            "text":"房源",
+            "iconPath": "image/home_tab_house_unselected.png",
+            "selectedIconPath": "image/home_tab_house_selected.png"
+        
+        }, {
+            "pagePath": "pages/component/customer/customer",
+            "text":"客源",
+            "iconPath": "image/home_tab_customer_unselected.png",
+            "selectedIconPath": "image/home_tab_customer_selected.png"
+        }, {
+            "pagePath": "pages/component/home/home",
+            "text":"首页",
+            "iconPath": "image/home_tab_home_unselected.png",
+            "selectedIconPath": "image/home_tab_home_unselected.pnghome_tab_home_unselected.png"
+        }, {
+            "pagePath": "pages/component/transaction/transaction",
+            "text":"跟进",
+            "iconPath": "image/transaction_tab_home_unselected.png",
+            "selectedIconPath": "image/transaction_tab_home_selected.png"
+         
+        }, {
+            "pagePath": "pages/component/user/user",
+            "text":"个人中心",
+            "iconPath": "image/user_tab_home_unselected.png",
+            "selectedIconPath": "image/user_tab_home_selected.png"
+        }]
+    },
+     "networkTimeout": {
+        "request": 10000,
+        "connectSocket": 10000,
+        "uploadFile": 10000,
+        "downloadFile": 10000
+    },
+    "debug": true
+}
