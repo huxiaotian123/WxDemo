@@ -12,8 +12,8 @@
   </view>
   <scroll-view scroll-y="true"  id= "scroll_view" style="height:{{scrollview_height}};" >
     <text class="item_title_font">我的房源</text>
-    <view class="user_itemlist_view">
-      <block wx:for="{{houseList}}">
+    <view class="user_itemlist_view"   wx:for="{{houseList}}">
+     
         <view style=" height: 40px;">
           <view class="user_item_view">
             <image style="width:22px;height:22px; margin: 8px;" src="{{item.image}}"></image>
@@ -21,11 +21,11 @@
           </view>
           <view style="margin-left:38px;display:{{item.showLine?'block':'none'}}" class="horizontal_line_grey"></view>
         </view>
-      </block>
+     
     </view>
     <text class="item_title_font">我的客源</text>
-    <view class="user_itemlist_view">
-      <block wx:for="{{customerList}}">
+    <view class="user_itemlist_view"  wx:for="{{customerList}}">
+   
         <view style=" height: 40px;">
           <view class="user_item_view">
             <image style="width:22px;height:22px; margin: 8px;" src="{{item.image}}"></image>
@@ -33,7 +33,7 @@
           </view>
           <view style="margin-left:38px;display:{{item.showLine?'block':'none'}}" class="horizontal_line_grey"></view>
         </view>
-      </block>
+
     </view>
     <view style="height:20px;background-color: #f0f1f1"></view>
     <view class="user_item_view">

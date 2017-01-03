@@ -1,3 +1,4 @@
 {
-    "navigationBarTitleText": "房源"
+    "navigationBarBackgroundColor": "#e12323",
+    "enablePullDownRefresh": true
 }

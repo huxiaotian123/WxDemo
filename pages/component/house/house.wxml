@@ -1,1 +1,12 @@
-我是房源
+<view class ="container">
+<view class ="title">
+
+</view>
+
+<view class = "title-filter"> 
+    <view class="filter-item">
+        <text>{{}}</text>
+    </view>
+</view>
+    
+</view> 

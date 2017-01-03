@@ -18,3 +18,20 @@
   background-color: #cccccc;
   height: 1px;
 }
+
+.title{
+  background-color: #e12323;
+  width: 100%;
+  min-width: 100%;
+  height: 44px;
+}
+
+.title-filter{
+  width: 100%;
+  min-width: 100%;
+  height: 44px;
+}
+
+.filter-item{
+   flex-grow:1;
+}

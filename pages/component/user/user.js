@@ -1,19 +1,17 @@
-Page({
+var param = {
   onLoad:function(){
      console.log("!onLoad");
+      var that = this;
     wx.getSystemInfo({
       success: function(res) {
-      console.log("!~~~~~");
-        this.setData(
-          {
-           scrollview_height :"200px" 
-          }
-        );
+      console.log(res);
+      var scrollheight =  res.windowHeight - 140;
+        that.setData({scrollview_height:scrollheight+"px"});
       }
     })
   },
   data: {
-    scrollview_height:"100px",
+    scrollview_height:"1000rpx",
     userInfoList: [ {
       image:'/image/name.png',
       name: 'hxt'
@@ -65,8 +63,8 @@ Page({
      image:'/image/view.png',
       name:"最近查看"
     }]
-  },
-
- 
+  }, 
 }
-)
+
+Page(param)
+

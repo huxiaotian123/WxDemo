@@ -1,8 +1,8 @@
 {
   "pages":[
+    "pages/component/house/house",
     "pages/component/user/user",
     "pages/component/home/home",
-    "pages/component/house/house",
     "pages/component/customer/customer",
     "pages/component/transaction/transaction",
     "pages/index/index",
